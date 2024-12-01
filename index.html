@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>File Download Sheet with 3D Animated Border</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f4f4f9;
+            margin: 0;
+        }
+        
+        .download-sheet {
+            background-color: #fff;
+            border-radius: 10px;
+            width: 300px;
+            padding: 20px;
+            text-align: center;
+            animation: fadeIn 1s ease-out, borderAnimation 3s infinite alternate;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            position: relative;
+        }
+
+        h2 {
+            color: #333;
+            margin-bottom: 20px;
+        }
+
+        .download-button {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: white;
+            font-size: 16px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            text-decoration: none;
+            margin: 10px 0;
+            transition: background-color 0.3s ease;
+        }
+
+        .download-button:hover {
+            background-color: #0056b3;
+        }
+
+        /* 3D Border Animation */
+        @keyframes borderAnimation {
+            0% {
+                box-shadow: 0 0 15px rgba(0, 123, 255, 0.6), 0 0 25px rgba(0, 123, 255, 0.6);
+                border: 5px solid #007bff;
+            }
+            50% {
+                box-shadow: 0 0 15px rgba(255, 87, 34, 0.6), 0 0 25px rgba(255, 87, 34, 0.6);
+                border: 5px solid #FF5722;
+            }
+            100% {
+                box-shadow: 0 0 15px rgba(76, 175, 80, 0.6), 0 0 25px rgba(76, 175, 80, 0.6);
+                border: 5px solid #4CAF50;
+            }
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(-20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .file-list {
+            list-style: none;
+            padding: 0;
+        }
+
+        .file-list li {
+            margin: 10px 0;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="download-sheet">
+        <h2>RaqeServer Nodes</h2>
+        <h4>Ayaan Shah</h4>
+        <ul class="file-list">
+            <li><a href="https://www.googleapis.com/drive/v3/files/10joft8EJty_SNSFoc601Fx5IOftWcf15?alt=media&key=AIzaSyAWniO9ugDY51ZEdnh3JT30nP_sY92oYiE" class="download-button" download>RaavanMailer_v.8.6.3.zip</a></li>
+            <li><a href="www.googleapis.com/drive/v3/files/1XBt75Zs52WUA1uNYDsqRLpjHmAjkWG13?alt=media&key=AIzaSyAWniO9ugDY51ZEdnh3JT30nP_sY92oYiE" class="download-button" download>RaavanMailer_v8.6.4.zip</a></li>
+            <li><a href="https://www.googleapis.com/drive/v3/files/1ENDyVyoBdVO6Lx2wt1lIUn9jC-8yoLiy?alt=media&key=AIzaSyAWniO9ugDY51ZEdnh3JT30nP_sY92oYiE" class="download-button" download>RaavanMailer_v8.6.5.zip</a></li>
+        </ul>
+    </div>
+
+    <script>
+        // Optional: You can add JavaScript here to handle dynamic downloads or other animations
+    </script>
+</body>
+</html>
